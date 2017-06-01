@@ -18,11 +18,12 @@ import org.springframework.data.redis.serializer.Jackson2JsonRedisSerializer;
 import java.lang.reflect.Method;
 
 @Configuration
-@EnableCaching
+@EnableCaching//启用缓存
 public class RedisConfig extends CachingConfigurerSupport{
 
     /**
-     *在使用@Cacheable时，如果不指定key，则使用找个默认的key生成器生成的key
+     *自定义key
+     * note : 此方法将会根据类名+方法名+所有参数的值生成唯一的一个key,即使@Cacheable中的value属性一样，key也会不一样。
      */
 	@Bean
 	public KeyGenerator keyGenerator() {
@@ -43,7 +44,7 @@ public class RedisConfig extends CachingConfigurerSupport{
     }
 
     /**
-     *管理缓存
+     *缓存管理器
      */
     @SuppressWarnings("rawtypes")
     @Bean
@@ -53,15 +54,25 @@ public class RedisConfig extends CachingConfigurerSupport{
         //rcm.setDefaultExpiration(60);//秒
         return rcm;
     }
-    
+
+    /**
+     * redis模板操作类
+     * @param factory
+     * @return
+     */
     @Bean
     public RedisTemplate<String, String> redisTemplate(RedisConnectionFactory factory) {
         StringRedisTemplate template = new StringRedisTemplate(factory);
-        Jackson2JsonRedisSerializer jackson2JsonRedisSerializer = new Jackson2JsonRedisSerializer(Object.class);
+
+        //设置缓存对象的序列化方式
         ObjectMapper om = new ObjectMapper();
         om.setVisibility(PropertyAccessor.ALL, JsonAutoDetect.Visibility.ANY);
         om.enableDefaultTyping(ObjectMapper.DefaultTyping.NON_FINAL);
+
+        //json序列化
+        Jackson2JsonRedisSerializer jackson2JsonRedisSerializer = new Jackson2JsonRedisSerializer(Object.class);
         jackson2JsonRedisSerializer.setObjectMapper(om);
+
         template.setValueSerializer(jackson2JsonRedisSerializer);
         template.afterPropertiesSet();
         return template;

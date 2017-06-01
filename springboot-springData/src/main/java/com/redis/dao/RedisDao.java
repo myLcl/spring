@@ -8,9 +8,6 @@ import org.springframework.stereotype.Repository;
 
 import java.util.concurrent.TimeUnit;
 
-/**
- * Created by fangzhipeng on 2017/4/20.
- */
 @Repository
 public class RedisDao {
 
@@ -23,7 +20,7 @@ public class RedisDao {
     }
 
     public String getValue(String key){
-        ValueOperations<String, String> ops = this.template.opsForValue();
+        ValueOperations<String, String> ops = template.opsForValue();
         return ops.get(key);
     }
 }
