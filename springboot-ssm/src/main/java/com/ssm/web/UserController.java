@@ -15,6 +15,7 @@ public class UserController {
 	@Autowired
 	private UserMapper userMapper;
 
+	//http://127.0.0.1:8080/getUsers
 	@RequestMapping("/getUsers")
 	public List<UserEntity> getUsers() {
         System.out.println("==================");
