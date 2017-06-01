@@ -2,6 +2,7 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
+      <module fileurl="file://$PROJECT_DIR$/../springboot-springData/springboot-springData.iml" filepath="$PROJECT_DIR$/../springboot-springData/springboot-springData.iml" />
       <module fileurl="file://$PROJECT_DIR$/springboot-ssm.iml" filepath="$PROJECT_DIR$/springboot-ssm.iml" />
     </modules>
   </component>

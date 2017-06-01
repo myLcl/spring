@@ -1,0 +1,8 @@
+<component name="ArtifactManager">
+  <artifact type="war" name="springboot-springData:war">
+    <output-path>$PROJECT_DIR$/../springboot-springData/target</output-path>
+    <root id="archive" name="springboot-springData-1.4.1.RELEASE.war">
+      <element id="artifact" artifact-name="springboot-springData:war exploded" />
+    </root>
+  </artifact>
+</component>
