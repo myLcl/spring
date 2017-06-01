@@ -1,0 +1,12 @@
+-------------------------------------------------------------------------------
+Test set: com.ssm.mapper.UserMapperTest
+-------------------------------------------------------------------------------
+Tests run: 2, Failures: 1, Errors: 0, Skipped: 0, Time elapsed: 2.649 sec <<< FAILURE! - in com.ssm.mapper.UserMapperTest
+testInsert(com.ssm.mapper.UserMapperTest)  Time elapsed: 0.115 sec  <<< FAILURE!
+java.lang.AssertionError: expected:<3> but was:<18>
+	at org.junit.Assert.fail(Assert.java:88)
+	at org.junit.Assert.failNotEquals(Assert.java:834)
+	at org.junit.Assert.assertEquals(Assert.java:645)
+	at org.junit.Assert.assertEquals(Assert.java:631)
+	at com.ssm.mapper.UserMapperTest.testInsert(UserMapperTest.java:29)
+
