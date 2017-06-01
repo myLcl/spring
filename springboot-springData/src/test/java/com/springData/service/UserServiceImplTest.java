@@ -20,8 +20,10 @@ public class UserServiceImplTest {
 
     @Test
     public void findOne() throws Exception {
-        System.out.println(userService.findOne(Long.valueOf(1)));
-        System.out.println(userService.findOne(Long.valueOf(1)));
+        User user = new User("李四");
+        userService.save(user);
+        System.out.println(userService.findOne(user.getId()));
+        System.out.println(userService.findOne(user.getId()));
     }
 
     @Test
@@ -29,15 +31,6 @@ public class UserServiceImplTest {
         userService.delete(Long.valueOf(1));
         System.out.println(userService.findOne(Long.valueOf(1)));
     }
-
-
-    @Test
-    public void save() {
-        User user = new User("李四");
-        userService.save(user);
-        System.out.println(userService.findOne(user.getId()));
-    }
-
 
 
 }
