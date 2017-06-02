@@ -14,7 +14,7 @@ public class HelloSender {
 
 	public void send() {
 		String context = "direct " + new Date();
-		this.rabbitTemplate.convertAndSend("queuetest2", context);
+		this.rabbitTemplate.convertAndSend("queuetest", context);
 	}
 
 }

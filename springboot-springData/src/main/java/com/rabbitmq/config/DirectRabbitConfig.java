@@ -11,7 +11,7 @@ import javax.management.Query;
  */
 
 @Configurable
-public class RabbitDirectConfig {
+public class DirectRabbitConfig {
 
     @Bean
     public Queue helloQueue() {
