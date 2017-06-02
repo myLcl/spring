@@ -16,6 +16,7 @@ public class UserController {
     @Autowired
     private UserService userService;
 
+    //http://127.0.0.1:8080/findUid
     @RequestMapping("/findUid")
     public String fingUid(HttpSession session) {
         UUID uid =(UUID) session.getAttribute("uid");
