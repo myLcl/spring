@@ -23,7 +23,7 @@ public class UserController {
     private UserService userService;
 
     //http://127.0.0.1:8080/findUid
-    @ApiOperation(value = "缓存", notes = "redis缓存session")
+    @ApiOperation(value = "", notes = "redis缓存session")
     @RequestMapping(value = "/findUid" ,method = RequestMethod.GET)
     public String fingUid(
                 @ApiParam(name = "session",value = "会话") HttpSession session
