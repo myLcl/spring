@@ -10,25 +10,26 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class FanoutRabbitConfig {
+    public static final String fanoutQueue = "fanout.A";
+    public static final String fanoutQueue1 = "fanout.B";
+
+    public static final String fanoutExchange = "fanoutExchange";
+
 
     @Bean
     public Queue AMessage() {
-        return new Queue("fanout.A");
+        return new Queue(fanoutQueue);
     }
 
     @Bean
     public Queue BMessage() {
-        return new Queue("fanout.B");
+        return new Queue(fanoutQueue1);
     }
 
-    @Bean
-    public Queue CMessage() {
-        return new Queue("fanout.C");
-    }
 
     @Bean
     FanoutExchange fanoutExchange() {
-        return new FanoutExchange("fanoutExchange");
+        return new FanoutExchange(fanoutExchange);
     }
 
     @Bean
@@ -41,9 +42,5 @@ public class FanoutRabbitConfig {
         return BindingBuilder.bind(BMessage).to(fanoutExchange);
     }
 
-    @Bean
-    Binding bindingExchangeC(Queue CMessage, FanoutExchange fanoutExchange) {
-        return BindingBuilder.bind(CMessage).to(fanoutExchange);
-    }
 
 }

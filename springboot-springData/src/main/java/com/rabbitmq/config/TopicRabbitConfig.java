@@ -10,32 +10,37 @@ import org.springframework.context.annotation.Configuration;
 
 @Configuration
 public class TopicRabbitConfig {
+    public static final String topicQueue = "topic.message";
+    public static final String topicQueue1 = "topic.message1";
 
-    final static String message = "topic.message";
-    final static String messages = "topic.messages";
+    public static final String topicExchange = "topicExchange";
+
+    public static final String routingKey = "topic.message";
+    public static final String routingKey1 = "topic.#";
+
 
     @Bean
     public Queue queueMessage() {
-        return new Queue(TopicRabbitConfig.message);
+        return new Queue(topicQueue);
     }
 
     @Bean
     public Queue queueMessages() {
-        return new Queue(TopicRabbitConfig.messages);
+        return new Queue(topicQueue1);
     }
 
     @Bean
     TopicExchange exchange() {
-        return new TopicExchange("topicExchange");
+        return new TopicExchange(topicExchange);
     }
 
     @Bean
     Binding bindingExchangeMessage(Queue queueMessage, TopicExchange exchange) {
-        return BindingBuilder.bind(queueMessage).to(exchange).with("topic.message");
+        return BindingBuilder.bind(queueMessage).to(exchange).with(routingKey);
     }
 
     @Bean
     Binding bindingExchangeMessages(Queue queueMessages, TopicExchange exchange) {
-        return BindingBuilder.bind(queueMessages).to(exchange).with("topic.#");
+        return BindingBuilder.bind(queueMessages).to(exchange).with(routingKey1);
     }
 }

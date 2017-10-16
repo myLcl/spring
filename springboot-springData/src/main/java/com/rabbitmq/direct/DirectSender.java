@@ -7,14 +7,15 @@ import org.springframework.stereotype.Component;
 import java.util.Date;
 
 @Component
-public class HelloSender {
+public class DirectSender {
 
 	@Autowired
 	private AmqpTemplate rabbitTemplate;
 
 	public void send() {
 		String context = "direct " + new Date();
-		this.rabbitTemplate.convertAndSend("queuetest", context);
+		System.out.println("direct send ");
+		this.rabbitTemplate.convertAndSend("directExchange","direct.message" ,context);
 	}
 
 }

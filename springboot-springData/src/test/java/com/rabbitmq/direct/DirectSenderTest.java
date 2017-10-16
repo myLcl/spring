@@ -12,12 +12,12 @@ import org.springframework.test.context.junit4.SpringRunner;
 
 @RunWith(SpringRunner.class)
 @SpringBootTest
-public class HelloTest {
+public class DirectSenderTest {
     @Autowired
-    private HelloSender helloSender;
+    private DirectSender directSender;
 
     @Test
-    public void hello() throws Exception {
-        helloSender.send();
+    public void name() throws Exception {
+        directSender.send();
     }
 }

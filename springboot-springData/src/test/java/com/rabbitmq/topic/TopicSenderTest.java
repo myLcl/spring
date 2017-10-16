@@ -19,11 +19,6 @@ public class TopicSenderTest {
     private TopicSender sender;
 
     @Test
-    public void topic() throws Exception {
-        sender.send();
-    }
-
-    @Test
     public void topic1() throws Exception {
         sender.send1();
     }
