@@ -253,6 +253,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/springData/filter/WebFilter.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/springData/schedule/Task.java">
           <value>
             <set />
@@ -264,6 +269,11 @@
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/test/java/com/mail/MailServiceImplTest.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/test/java/com/mail/MailServiceTest.java">
           <value>
             <set />
           </value>
