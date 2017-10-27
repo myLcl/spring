@@ -1,0 +1,5 @@
+com\ssm\lcl\controller\BookControllerTestByHttpClient.class
+com\ssm\lcl\controller\BookControllerUnitTest.class
+com\ssm\lcl\service\impl\BookServiceImplTest.class
+com\ssm\lcl\dao\BookDaoTest.class
+com\ssm\lcl\BaseTest.class
