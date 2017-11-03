@@ -13,7 +13,42 @@
             <set />
           </value>
         </entry>
+        <entry key="E:/cash-loan-flow/src/main/java/cn/quantgroup/cashloanflow/controller/rong360/Rong360ExternalController.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="E:/cash-loan-flow/src/main/java/cn/quantgroup/cashloanflow/model/callback/loan/LoanCallbackStatus.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="E:/cash-loan-flow/src/main/java/cn/quantgroup/cashloanflow/model/standard/callbackStatus/CallbackStatusEnum.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="E:/cash-loan-flow/src/main/java/cn/quantgroup/cashloanflow/service/callback/loan/impl/common/CommonLoanCallbackService.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="E:/cash-loan-flow/src/main/java/cn/quantgroup/cashloanflow/service/callback/loan/state/AbstractLoanCallbackState.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="E:/cash-loan-flow/src/main/java/cn/quantgroup/cashloanflow/service/dealQueueMsg/impl/DealQueueMsgServiceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="E:/cash-loan-flow/src/main/java/cn/quantgroup/cashloanflow/service/warningReport/impl/DingDingSerivceImpl.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="E:/cash-loan-flow/src/main/java/cn/quantgroup/cashloanflow/service/warningReport/impl/WarningReportServiceImpl.java">
           <value>
             <set />
           </value>
@@ -148,6 +183,11 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/aspect/ControllerAspect.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/mail/MailService.java">
           <value>
             <set />
@@ -253,12 +293,32 @@
             <set />
           </value>
         </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/springData/aspect/ControllerAspect.java">
+          <value>
+            <set />
+          </value>
+        </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/springData/filter/WebFilter.java">
           <value>
             <set />
           </value>
         </entry>
         <entry key="$PROJECT_DIR$/src/main/java/com/springData/schedule/Task.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/springData/util/AESUtil.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/springData/util/GZipUtil.java">
+          <value>
+            <set />
+          </value>
+        </entry>
+        <entry key="$PROJECT_DIR$/src/main/java/com/springData/util/MD5Util.java">
           <value>
             <set />
           </value>
