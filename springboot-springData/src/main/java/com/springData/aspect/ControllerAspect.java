@@ -23,7 +23,7 @@ public class ControllerAspect {
     @Around(value = "userController()")
     public Object handleLiebaoControllerException(ProceedingJoinPoint pjp){
         try {
-            System.out.println("切面");
+            System.out.println("切面功能");
             return pjp.proceed();
         }  catch (Throwable throwable) {
             throwable.printStackTrace();

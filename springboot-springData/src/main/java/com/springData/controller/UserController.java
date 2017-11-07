@@ -35,4 +35,6 @@ public class UserController {
         session.setAttribute("uid",uid);
         return session.getId();
     }
+
+
 }
