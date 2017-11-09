@@ -1,10 +1,9 @@
 package com.springData.service;
 
-import com.springData.model.User;
+import com.springData.entity.User;
 import com.springData.repository.UserRepository;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.cache.annotation.CacheEvict;
-import org.springframework.cache.annotation.CachePut;
 import org.springframework.cache.annotation.Cacheable;
 import org.springframework.stereotype.Service;
 

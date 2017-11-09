@@ -1,6 +1,6 @@
 package com.springData.repository;
 
-import com.springData.model.User;
+import com.springData.entity.User;
 import org.junit.Test;
 import org.junit.runner.RunWith;
 import org.slf4j.Logger;

@@ -1,6 +1,6 @@
 package com.springData.service;
 
-import com.springData.model.User;
+import com.springData.entity.User;
 
 /**
  * Created by conglin.liu on 2017/6/1.
